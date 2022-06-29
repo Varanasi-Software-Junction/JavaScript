@@ -1,0 +1,23 @@
+
+<script>
+function f1(event) {
+  var x = event.clientX;
+  var y = event.clientY;
+  var coords = "X coords: " + x + ", Y coords: " + y;
+  document.getElementById("demo").innerHTML = coords;
+}
+</script>
+<style>
+p{
+width:300px;
+height:400px;
+background-color:yellow;
+
+}
+
+</style>
+<div id="demo">
+
+
+</div>
+<p onclick="f1(event)">Para</p>

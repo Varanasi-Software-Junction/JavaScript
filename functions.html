@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+ 
+<html>
+<title>Functions in Javascript</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script>
+ function fNoParameters()
+ {
+ var div=document.getElementById("output");
+ output="No params";
+ div.innerHTML=output;
+ }
+ function fAddParameters(a,b)
+ {
+ var div=document.getElementById("output");
+ output="" + (a+b);
+ div.innerHTML=output;
+ }
+ function fVariableParameters1()
+ {
+ var output="";
+ for(var i=0;i<=arguments.length-1;i++)
+ output=output + arguments[i]+ ",";
+ var div=document.getElementById("output");
+ div.innerHTML=output;
+ }
+ function fVariableParameters2()
+ {
+ div=document.getElementById("output").innerHTML="";
+ 
+ var arr=[1,2,3,4,5];
+ arr.forEach(addNumbers);
+ }
+ 
+ function addNumbers(item,index)
+ {
+ var div=document.getElementById("output");
+ div.innerHTML+=item + ",";
+ }
+ 
+ function callOtherFunctions()
+ {
+ var f=Math.sqrt;
+ var output=f(10);
+ div=document.getElementById("output").innerHTML=output;
+ 
+ }
+ 
+ </script>
+ 
+ 
+</head>
+<body>
+ Output<div id="output"></div><br/>
+ 
+ <input type="button" value="No Params" onclick="fNoParameters()"><br/>
+ <input type="button" value="Add Params" onclick="fAddParameters(2,5)"><br/>
+ <input type="button" value="Variable Params" onclick="fVariableParameters1(1,2,3,4,5)"><br/>
+ <input type="button" value="Variable Params" onclick="fVariableParameters2(1,2,3,4,5)"><br/>
+ <input type="button" value="Functions as variable" onclick="callOtherFunctions()"><br/>
+ 
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+<title>Ternary</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script>
+ function f()
+ {
+ var x=document.getElementById("n1").value;
+ var y=document.getElementById("n2").value;
+ x=Number(x);
+ y=Number(y);
+ var max=(x>=y)?x:y;
+ 
+ document.getElementById("max").value=max;
+ }
+ </script>
+</head>
+<body>
+ N1<input type="text" id="n1"><br/>
+ N2<input type="text" id="n2"><br/>
+ Max<input type="text" id="max"><br/>
+ <input type="button" value="Find" onclick="f()"><br/>
+</body>
+</html>

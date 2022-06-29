@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+
+<textarea onkeypress="f(event)"></textarea>
+
+<p id="demo"></p>
+
+<script>
+/* In this example, we use a cross-browser solution, because the keyCode property does not work on the onkeypress event in Firefox. However, the which property does.
+
+Explanation of the first line in the function below: if the browser supports event.which, then use event.which, otherwise use event.keyCode */
+
+function f(event) {
+  var x =  event.keyCode;
+  var y=String.fromCharCode(x);
+  document.getElementById("demo").innerHTML = "The Unicode value is: " + x + y;
+}
+</script>
+
+</body>
+</html>

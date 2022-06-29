@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+<title>setInterval, Clear Interval, Slide Show</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script>
+var n=0;
+var loop;
+
+function startShow()
+{
+loop=setInterval(f,2000);
+}	
+function f()
+{
+n=(n+1) % 3;
+document.getElementById("img").src="pics/" + n + ".jpg";
+
+}
+function stopShow()
+{
+clearInterval(loop);
+}	
+ </script>
+</head>
+<body>
+ <img id="img" src="pics/0.jpg"/><br/>
+ 
+ <input type="button" value="Start Show" onclick="startShow()"><br/>
+ <input type="button" value="Stop Show" onclick="stopShow()"><br/>
+ 
+</body>
+</html>
