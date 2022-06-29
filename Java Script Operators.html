@@ -1,0 +1,78 @@
++ Addition
+– Subtraction
+* Multiplication
+/ Division float division
+% Modulus works for floating point
+
+JavaScript types
+
+The data type of NaN is number
+The data type of an array is object
+The data type of a date is object
+The data type of null is object
+The data type of an undefined variable is undefined *
+The data type of a variable that has not been assigned a value is also undefined *
+JavaScript Type Conversion
+typeof use
+console.log(typeof c);
+
+The constructor Property
+The constructor property returns the constructor function for all JavaScript variables.
+
+Convert to String
+
+
+String(x) // returns a string from a number variable x
+String(123) // returns a string from a number literal 123
+String(100 + 23) // returns a string from a number from an expression
+x.toString()
+(123).toString()
+(100 + 23).toString()
+
+DatesCreating Date Objects
+Date objects are created with the new Date() constructor.
+
+There are 4 ways to create a new date object:
+
+new Date()
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+new Date(milliseconds)
+new Date(date string)
+
+new Date()
+
+
+Method Description
+getFullYear() Get the year as a four digit number (yyyy)
+getMonth() Get the month as a number (0-11)
+getDate() Get the day as a number (1-31)
+getHours() Get the hour (0-23)
+getMinutes() Get the minute (0-59)
+getSeconds() Get the second (0-59)
+getMilliseconds() Get the millisecond (0-999)
+getTime() Get the time (milliseconds since January 1, 1970)
+getDay() Get the weekday as a number (0-6)
+
+new Date() creates a new date object with the current date and time:
+var d = new Date("October 13, 2014 11:13:00");
+
+JavaScript Date Input
+There are generally 3 types of JavaScript date input formats:
+
+Type Example
+ISO Date "2015-03-25" (The International Standard)
+Short Date "03/25/2015"
+Long Date "Mar 25 2015" or "25 Mar 2015"
+
+
+
+
+
+setDate() Set the day as a number (1-31)
+setFullYear() Set the year (optionally month and day)
+setHours() Set the hour (0-23)
+setMilliseconds() Set the milliseconds (0-999)
+setMinutes() Set the minutes (0-59)
+setMonth() Set the month (0-11)
+setSeconds() Set the seconds (0-59)
+setTime() Set the time (milliseconds since January 1, 1970)
